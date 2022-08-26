@@ -25,8 +25,8 @@ void RFID_controller::read_tag(){
 
 String RFID_controller::check_data(){
 
-    if(this->last_tag == GUSTAVO_TAG) return GUSTAVO_NAME;
-    if(this->last_tag == SAVIO_TAG) return SAVIO_NAME;
+    if(this->last_tag == GUSTAVO_TAG ) return GUSTAVO_NAME;
+    if(this->last_tag == SAVIO_TAG   ) return SAVIO_NAME;
     if(this->last_tag == KEYCHAIN_TAG) return KEYCHAIN_TAG;
 
     return UNDEFINED;
