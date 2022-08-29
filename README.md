@@ -24,28 +24,41 @@ O leitor RFID trabalha em várias faixas de frequência padronizadas entre 125 K
 
 ## Material Utilizado
   
-• 1x Placa Uno
+* 1x Placa Uno
+* 1x Protoboard
+* 1x RFID + Tags
+* Jumpers Variados
+* 1x Led 
+* 1x Módulo Relé 5V
+* 2x Resistores
+* 1x Buzzer 5V
+* 1x Monitor serial LCD
 
-• 1x Protoboard
+## Bibliotecas Utilizadas
 
-• 1x RFID + Tags
-
-• ??x Jumpers Macho x Macho
-
-• 1x Led Vermelho
-
-• 1x Módulo Relé 5V
-
-• 1x Resistor
-
-• 1x Buzzer 5V
-
-• 1x Monitor serial LCD
+1. <a href="https://github.com/arduino/ArduinoCore-avr/tree/master/libraries/SPI"> SPI </a>
+2. <a href="https://github.com/miguelbalboa/rfid"> RFID </a>
+3. <a href="https://github.com/arduino-libraries/LiquidCrystal"> LCD </a> 
 
 
-## Procedimento 
+## Relação pinos entrada e saída:
+~~~~C
+    #define RST_PIN 9  //RFID
+    #define SS_PIN 10  //RFID
 
-#### Imagem do circuito
+    #define RS 2  //LCD
+    #define EN 3  //LCD
+    #define D4 4  //LCD
+    #define D5 5  //LCD
+    #define D6 6  //LCD
+    #define D7 7  //LCD
+
+    #define LED_PIN    14 
+    #define BUZZER_PIN 15
+    #define RELE_PIN   19
+~~~~ 
+
+## Imagens do circuito
 
 ![esquema_bb](https://user-images.githubusercontent.com/62517334/186986118-1fc7e1fb-5c90-4bc1-b61b-5f1c4c9042d2.png)
   

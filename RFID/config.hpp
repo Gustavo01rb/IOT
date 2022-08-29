@@ -1,14 +1,14 @@
 #pragma once
 
-#define RST_PIN 9
-#define SS_PIN 10
+#define RST_PIN 9  //RFID
+#define SS_PIN 10  //RFID
 
-#define RS 2
-#define EN 3
-#define D4 4
-#define D5 5 
-#define D6 6 
-#define D7 7
+#define RS 2  //LCD
+#define EN 3  //LCD
+#define D4 4  //LCD
+#define D5 5  //LCD
+#define D6 6  //LCD
+#define D7 7  //LCD
 
 #define LED_PIN    14
 #define BUZZER_PIN 15
